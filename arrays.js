@@ -52,9 +52,59 @@ console.log(names);
 //we use the pop method to remove elements >>at the end of the array
 /* names.pop();
 console.log(names); */
-\\create an array of 10 vehicles ,then use this array methods to add ,remove,check lenght of the array
-length
-pop
-push
-unshift
-splice
+
+//MDN reference
+
+//slice,map,indexof,concat,lastIndex,includes,fill,copywithin
+
+//slice
+//creates a new array contaning a portion of the original array(creates a subchild of some sort )
+//takes two arguments the startofthe slice and the end of the slice index
+const numbers = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 12, 13, 14, 15, 26, 27, 28, 354, 456, 76, 345,
+  343, 6567, 343, 22, 34, 3435, 2546, 2435, 7656, 343,
+];
+let newArray = numbers.slice(10, 30);
+console.log(numbers);
+console.log(newArray);
+
+//map 
+//creates a new array by applying a functiob to each element of the parent/original array
+//takes a callback function as an argument
+const numbers1=[1,2,4,5,6,8,86,54,654]
+
+let newMapArray=numbers1.map(function(num){
+    return num*num;
+})
+console.log(newMapArray);
+//concat(+)
+//the concat method is used to join more arrays together
+const namesNew=["faith","winnie","Peter","Stefan"]
+const NamesTwo=["Mutanu","Atieno","Spectre","Sijui"]
+const NamesThree=namesNew.concat(NamesTwo);
+console.log(NamesThree);
+//How to map the first element to the first other element of the array 
+//Includes 
+//checks if a value is included in the array set no matter the lenght of the array
+//it outs outputs a boolen value either tru or false if an element is included or not 
+
+const namesThr=["faith","winnie","Peter","Stefan"]
+const isIncluded=namesThr.includes("pooh")
+console.log(isIncluded);
+//reduce>>used in sum,products,minus,......
+//the reduce ,method allows you accumulate a songle value by iterating the array 
+/* 
+Array.reduce(callback(accumulator,currentValue,currentIndex,array),initialValue)
+accumulator:initially the initial value which is later accumulated over a period of time 
+currentValue:current element being procesed 
+currentIndex:index of the current element in an array
+initialValue:the original values in a n array.original array
+return value will be accumulator
+ */
+let calcNumbers=[1,2,3,4,5,6,7,8,20,390]
+const sum=calcNumbers.reduce(function(accumulator,currentValue){
+    return accumulator - currentValue;
+})
+console.log(sum);
+
+
