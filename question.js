@@ -1,7 +1,11 @@
-1: Question:
+/* 1: Question:
 Write a function mergeArrays(arr1, arr2) that takes two arrays arr1 and arr2 and merges them into a single array, with the elements sorted in ascending order.
+declare our function with two parameters(arr1,arr2)
+declare an array variable three that stroes the concatinated array
+sort the array 3
+return array 
 
-Scenario:
+Scenario:   
 You are building a music playlist app. You have two playlists from different sources. Write a function to merge these playlists into one, ensuring that the songs are sorted alphabetically by their titles.
 
 2:
@@ -93,4 +97,4 @@ Question:
 Write a function longestSubstringWithoutRepeating(str) that takes a string str and returns the length of the longest substring without repeating characters.
 
 Scenario:
-You are developing a text editor with syntax highlighting. Write a function to determine the longest substring of code without any syntax errors, ensuring accurate highlighting for better code readability.
+You are developing a text editor with syntax highlighting. Write a function to determine the longest substring of code without any syntax errors, ensuring accurate highlighting for better code readability. */
